@@ -11,7 +11,7 @@ public class Salto : MonoBehaviour
     public float SpeedX;
     public float salto;
     public int maxSaltos = 2;
-    private int saltosRestantes;
+    private int saltosRestantes;    
 
     private void Start()
     {

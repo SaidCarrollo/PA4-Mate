@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 public class Playermovement : MonoBehaviour
 {
     private float velocidadCaminando = 4f;
@@ -23,6 +24,11 @@ public class Playermovement : MonoBehaviour
 
         rb.velocity = fuerzaMovimiento;
     }
+    public void Reintentar()
+    {
+        SceneManager.LoadScene("GamePlay");
+    }
+
 }
 
 
