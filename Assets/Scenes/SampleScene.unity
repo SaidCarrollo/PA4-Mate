@@ -584,8 +584,24 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: f34ec7d3-a523-4cde-983a-db0519701495
     m_ActionName: PlayerM/New action[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 535942291}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 0307b70b-47f2-46b6-985a-75060af2b04a
+    m_ActionName: PlayerM/Jump[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: p
   m_DefaultActionMap: PlayerM
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
