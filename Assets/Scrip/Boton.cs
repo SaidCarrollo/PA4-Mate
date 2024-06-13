@@ -5,19 +5,20 @@ using UnityEngine;
 public class Boton : MonoBehaviour
 {
     public HingeJoint joint;
+    public Rigidbody rgd;
     public void PararTiempo()
     {
         JointMotor motor = joint.motor;
         motor.targetVelocity = 0f;
         joint.motor = motor;
-        GetComponent<Rigidbody>().freezeRotation = true;
+        rgd.freezeRotation = true;
     }
     public void VolverTiempo()
     {   
         JointMotor motor = joint.motor;
         motor.targetVelocity = 150f;
         joint.motor = motor;
-        GetComponent<Rigidbody>().freezeRotation = false;
+        rgd.freezeRotation = false;
 
     }
 }
