@@ -10,11 +10,14 @@ public class Boton : MonoBehaviour
         JointMotor motor = joint.motor;
         motor.targetVelocity = 0f;
         joint.motor = motor;
+        GetComponent<Rigidbody>().freezeRotation = true;
     }
     public void VolverTiempo()
-    {
+    {   
         JointMotor motor = joint.motor;
         motor.targetVelocity = 150f;
         joint.motor = motor;
+        GetComponent<Rigidbody>().freezeRotation = false;
+
     }
 }

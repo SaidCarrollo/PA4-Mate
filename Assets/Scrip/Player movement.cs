@@ -28,7 +28,13 @@ public class Playermovement : MonoBehaviour
     {
         SceneManager.LoadScene("GamePlay");
     }
-
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Win")
+        {
+            SceneManager.LoadScene("Win");
+        }
+    }
 }
 
 
